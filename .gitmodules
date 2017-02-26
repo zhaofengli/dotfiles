@@ -1,0 +1,39 @@
+[submodule "dotbot"]
+	path = dotbot
+	url = https://github.com/anishathalye/dotbot
+[submodule "vim/bundle/goyo.vim"]
+	path = vim/bundle/goyo.vim
+	url = https://github.com/junegunn/goyo.vim
+[submodule "vim/bundle/syntastic"]
+	path = vim/bundle/syntastic
+	url = https://github.com/vim-syntastic/syntastic
+[submodule "vim/bundle/vim-airline"]
+	path = vim/bundle/vim-airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule "vim/bundle/vim-fugitive"]
+	path = vim/bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "vim/bundle/vim-sensible"]
+	path = vim/bundle/vim-sensible
+	url = https://github.com/tpope/vim-sensible
+[submodule "vim/bundle/vim-zenroom2"]
+	path = vim/bundle/vim-zenroom2
+	url = https://github.com/amix/vim-zenroom2
+[submodule "vim/bundle/vim-pathogen"]
+	path = vim/bundle/vim-pathogen
+	url = https://github.com/tpope/vim-pathogen
+[submodule "vim/bundle/vim-fish"]
+	path = vim/bundle/vim-fish
+	url = https://github.com/dag/vim-fish
+[submodule "fish/fisherman"]
+	path = fish/fisherman
+	url = https://github.com/fisherman/fisherman
+[submodule "vim/bundle/vim-twig"]
+	path = vim/bundle/vim-twig
+	url = https://github.com/lumiliet/vim-twig
+[submodule "vim/bundle/vimtex"]
+	path = vim/bundle/vimtex
+	url = https://github.com/lervag/vimtex
+[submodule "fish/bass"]
+	path = fish/bass
+	url = https://github.com/edc/bass

@@ -1,0 +1,81 @@
+" == Simple stuff ==
+" Highlight syntax
+syntax on
+
+" Common sets
+set autowrite hlsearch
+
+" == Extra key mappings / commands ==
+" F5 to run
+autocmd FileType python nnoremap <silent> <F5> :w<cr>:!clear;python3 %<cr>
+autocmd FileType php nnoremap <silent> <F5> :w<cr>:!clear;php %<cr>
+autocmd FileType java nnoremap <silent> <F5> :w<cr>:!clear;javac %;java %:r<cr>
+
+" Fat fingers :P
+command WQ wq
+command Wq wq
+command W w
+command Q q
+
+" :C to clear search highlight
+" http://stackoverflow.com/a/657484
+command C let @/ = ""
+
+" Press Space to insert a single character
+" http://vim.wikia.com/wiki/Insert_a_single_character
+nnoremap <Space> i_<Esc>r
+
+" == Folding behavior ==
+" Enable folding based on syntax
+set foldmethod=syntax
+
+" Unfold everything by default
+" http://stackoverflow.com/a/8316817
+au BufWinEnter * normal zR
+
+" Fold correctly in fish
+autocmd FileType fish setlocal foldmethod=expr
+
+" == Auto indentation ==
+" Indent based on filetype
+filetype plugin indent on
+set smartindent
+
+" Fix yaml indentation
+" http://stackoverflow.com/questions/26962999/wrong-indentation-when-editing-yaml-in-vim
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+autocmd FileType yaml setl indentkeys-=<:>
+
+" == Line wrapping ==
+" Enable line wrapping
+set linebreak breakindent
+
+" == Writing ==
+" Enable spellcheck for Markdown
+autocmd FileType markdown set spell spelllang=en_us
+
+" Enable fountain.vim
+au BufRead,BufNewFile *.fountain	set filetype=fountain
+
+" == Syntastic ==
+" Convince Syntastic to use Python 3
+let g:syntastic_python_python_exec = '/usr/bin/python3'
+
+" == Airline ==
+" Make the status line boring
+let g:airline_powerline_fonts = 0
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
+
+" == Vimtex ==
+let g:vimtex_latexmk_continuous = 1
+
+" == Tom ==
+" Jerry will be caught
+command T set mouse=
+
+" == Pathogen ==
+" Oh no! That's a virus!
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+execute pathogen#infect()
+

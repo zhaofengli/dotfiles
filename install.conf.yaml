@@ -1,0 +1,33 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+  - [mkdir -p ~/.local/bin, Creating ~/.local/bin]
+  - [./scripts/setup-hub.sh, Setting up hub]
+  - [./scripts/setup-composer.sh, Setting up Composer]
+
+- link:
+    ~/.dotfiles: ''
+    ~/.tmux.conf: tmux.conf
+    ~/.byobu/.tmux.conf:
+      create: true
+      path: tmux.conf
+    ~/.config/fish/config.fish:
+      create: true
+      path: fish/config.fish
+    ~/.config/fish/functions/fisher.fish:
+      create: true
+      path: fish/fisherman/fisher.fish
+    ~/.config/fish/functions/bass.fish:
+      path: fish/bass/functions/bass.fish
+    ~/.ghci:
+      path: ghc/ghci
+    ~/.vim: vim
+    ~/.vimrc: vim/vimrc
+    ~/.npmrc: npm/npmrc
+
+
