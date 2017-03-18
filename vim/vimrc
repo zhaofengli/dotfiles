@@ -4,12 +4,13 @@ syntax on
 
 " Common sets
 set autowrite hlsearch
+set modeline
 
 " == Extra key mappings / commands ==
-" F5 to run
-autocmd FileType python nnoremap <silent> <F5> :w<cr>:!clear;python3 %<cr>
-autocmd FileType php nnoremap <silent> <F5> :w<cr>:!clear;php %<cr>
-autocmd FileType java nnoremap <silent> <F5> :w<cr>:!clear;javac %;java %:r<cr>
+" F10 to run
+autocmd FileType python nnoremap <silent> <F10> :w<cr>:!clear;python3 %<cr>
+autocmd FileType php nnoremap <silent> <F10> :w<cr>:!clear;php %<cr>
+autocmd FileType java nnoremap <silent> <F10> :w<cr>:!clear;javac %;java %:r<cr>
 
 " Fat fingers :P
 command WQ wq
