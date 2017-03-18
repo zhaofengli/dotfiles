@@ -33,6 +33,7 @@ prepend_path $HOME/.composer/vendor/bin
 prepend_path $HOME/.npm-packages/bin $PATH
 prepend_path $HOME/Android/Sdk/platform-tools
 prepend_path $HOME/.local/google-cloud-sdk/bin
+prepend_path $HOME/.pyenv/bin $PATH
 prepend_path $HOME/.local/bin $PATH
 
 abbr l 'ls -t'
@@ -61,4 +62,5 @@ abbr gs 'git status --short --branch'
 
 abbr serve 'php -S localhost:8080'
 
+status --is-interactive; and source (pyenv init -|psub)
 source_if_exists $HOME/.config/fish/private.fish

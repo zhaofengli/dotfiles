@@ -37,3 +37,6 @@
 [submodule "fish/bass"]
 	path = fish/bass
 	url = https://github.com/edc/bass
+[submodule "python/pyenv"]
+	path = python/pyenv
+	url = https://github.com/pyenv/pyenv.git

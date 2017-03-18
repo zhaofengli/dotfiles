@@ -29,5 +29,6 @@
     ~/.vim: vim
     ~/.vimrc: vim/vimrc
     ~/.npmrc: npm/npmrc
+    ~/.pyenv: python/pyenv
 
 

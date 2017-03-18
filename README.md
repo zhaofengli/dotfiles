@@ -18,4 +18,5 @@ Star those awesome stuff:
 * [pathogen](https://github.com/tpope/vim-pathogen), [syntastic](https://github.com/vim-syntastic/syntastic), [airline](https://github.com/vim-airline/vim-airline), [figitive](https://github.com/tpope/vim-fugitive), [sensible](https://github.com/tpope/vim-sensible), [vim-fish](https://github.com/dag/vim-fish), [vim-twig](https://github.com/lumiliet/vim-twig), [vimtex](https://github.com/lervag/vimtex), [fountain.vim](https://github.com/vim-scripts/fountain.vim) - Pathogens. Keep away.
 * [bass](https://github.com/edc/bass) - Some bash-y music for fishing.
 * [fisherman](https://github.com/fisherman/fisherman) - Doesn't teach you to fish, but fishes for you
+* [pyenv](https://github.com/pyenv/pyenv) - *How To Train Your Python*
 
