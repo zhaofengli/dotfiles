@@ -62,5 +62,8 @@ abbr gs 'git status --short --branch'
 
 abbr serve 'php -S localhost:8080'
 
-status --is-interactive; and source (pyenv init -|psub)
+if command -v pyenv > /dev/null
+	status --is-interactive; and source (pyenv init -|psub)
+end
+
 source_if_exists $HOME/.config/fish/private.fish
