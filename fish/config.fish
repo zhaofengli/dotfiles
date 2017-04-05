@@ -59,6 +59,7 @@ abbr gp 'git push'
 abbr gpf 'git push -f'
 abbr gpl 'git pull --rebase --autostash'
 abbr gs 'git status --short --branch'
+abbr gsms 'git submodule update --init; git submodule sync --recursive; git submodule update'
 
 abbr serve 'php -S localhost:8080'
 
