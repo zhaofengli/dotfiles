@@ -11,6 +11,8 @@ set modeline
 autocmd FileType python nnoremap <silent> <F10> :w<cr>:!clear;python3 %<cr>
 autocmd FileType php nnoremap <silent> <F10> :w<cr>:!clear;php %<cr>
 autocmd FileType java nnoremap <silent> <F10> :w<cr>:!clear;javac %;java %:r<cr>
+autocmd FileType c nnoremap <silent> <F10> :w<cr>:!clear;gcc %;./a.out<cr>
+autocmd FileType cpp nnoremap <silent> <F10> :w<cr>:!clear;g++ %;./a.out<cr>
 
 " Fat fingers :P
 command WQ wq
