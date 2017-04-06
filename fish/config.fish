@@ -41,7 +41,6 @@ abbr la 'ls -a'
 abbr ll 'ls -lh'
 abbr lla 'ls -lah'
 
-abbr v 'vim'
 abbr gd 'git diff'
 abbr gds 'git diff --staged'
 abbr gc 'git commit'
@@ -62,6 +61,12 @@ abbr gs 'git status --short --branch'
 abbr gsms 'git submodule update --init; git submodule sync --recursive; git submodule update'
 
 abbr serve 'php -S localhost:8080'
+
+if command -v nvim > /dev/null
+	abbr v 'nvim'
+else
+	abbr v 'vim'
+end
 
 if command -v pyenv > /dev/null
 	status --is-interactive; and source (pyenv init -|psub)

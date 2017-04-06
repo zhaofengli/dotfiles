@@ -32,6 +32,8 @@
       path: ghc/ghci
     ~/.vim: vim
     ~/.vimrc: vim/vimrc
+    ~/.config/nvim:
+      path: vim
     ~/.npmrc: npm/npmrc
     ~/.pyenv: python/pyenv
 
