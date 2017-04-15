@@ -23,7 +23,11 @@
       create: true
       path: fish/fisherman/fisher.fish
     ~/.config/fish/functions/bass.fish:
+      create: true
       path: fish/bass/functions/bass.fish
+    ~/.config/fish/functions/__bass.py:
+      create: true
+      path: fish/bass/functions/__bass.py
     ~/.ghci:
       path: ghc/ghci
     ~/.vim: vim
