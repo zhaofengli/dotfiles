@@ -28,6 +28,9 @@
     ~/.config/fish/functions/__bass.py:
       create: true
       path: fish/bass/functions/__bass.py
+    ~/.config/bc:
+      create: true
+      path: bc
     ~/.ghci:
       path: ghc/ghci
     ~/.vim: vim

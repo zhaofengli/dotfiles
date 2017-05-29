@@ -68,6 +68,8 @@ else
 	abbr v 'vim'
 end
 
+abbr calc 'bc -il ~/.config/bc/init.bc'
+
 if command -v pyenv > /dev/null
 	status --is-interactive; and source (pyenv init -|psub)
 end

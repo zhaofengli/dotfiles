@@ -1,0 +1,29 @@
+pi = 4 * a(1);
+
+define dtor(degrees) {
+	return (degrees * pi) / 180;
+}
+
+define rtod(radians) {
+	return (radians / ( 2 * pi )) * 360;
+}
+
+define t(radians) {
+	return s(radians) / c(radians);
+}
+
+define td(degrees) {
+	return t(dtor(degrees));
+}
+
+define sd(degrees) {
+	return s(dtor(degrees));
+}
+
+define cd(degrees) {
+	return c(dtor(degrees));
+}
+
+define ad(x) {
+	return rtod(a(x));
+}
