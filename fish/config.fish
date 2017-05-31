@@ -60,6 +60,15 @@ abbr gpl 'git pull --rebase --autostash'
 abbr gs 'git status --short --branch'
 abbr gsms 'git submodule update --init; git submodule sync --recursive; git submodule update'
 
+abbr txn 'tmux new -s'
+abbr txa 'tmux a -t'
+abbr txl 'tmux ls'
+
+abbr pp0 'patch -p0'
+abbr pp1 'patch -p1'
+
+abbr rccp 'rclone copy'
+
 abbr serve 'php -S localhost:8080'
 
 if command -v nvim > /dev/null
