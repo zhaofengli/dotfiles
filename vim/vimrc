@@ -28,6 +28,24 @@ command C let @/ = ""
 " http://vim.wikia.com/wiki/Insert_a_single_character
 nnoremap <Space> i_<Esc>r
 
+" == Skeletons ==
+function SkeletonCpp()
+	0r ~/.vim/templates/skeleton.cpp
+	6
+	autocmd! templates
+endfunction
+
+function SkeletonOjCpp()
+	0r ~/.vim/templates/skeleton.oj.cpp
+	17
+	autocmd! templates
+endfunction
+
+augroup templates
+	autocmd BufNewFile *.oj.cpp call SkeletonOjCpp()
+	autocmd BufNewFile *.cpp call SkeletonCpp()
+augroup END
+
 " == Folding behavior ==
 " Enable folding based on syntax
 set foldmethod=syntax
