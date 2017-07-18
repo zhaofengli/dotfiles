@@ -5,6 +5,9 @@ set shell=/bin/bash
 " Highlight syntax
 syntax on
 
+" Tab width
+set ts=4 sw=4
+
 " Common sets
 set autowrite hlsearch
 set modeline
@@ -14,8 +17,10 @@ set modeline
 autocmd FileType python nnoremap <silent> <F10> :w<cr>:!clear;python3 %<cr>
 autocmd FileType php nnoremap <silent> <F10> :w<cr>:!clear;php %<cr>
 autocmd FileType java nnoremap <silent> <F10> :w<cr>:!clear;javac % && java %:r<cr>
+autocmd FileType javascript nnoremap <silent> <F10> :w<cr>:!clear;babel-node %<cr>
 autocmd FileType c nnoremap <silent> <F10> :w<cr>:!clear;cc -g -Wall -Wextra -Werror -pedantic -std=c11 % && ./a.out<cr>
 autocmd FileType cpp nnoremap <silent> <F10> :w<cr>:!clear;c++ -g -Wall -Wextra -Werror -pedantic -std=c++14 % && ./a.out<cr>
+autocmd FileType nim nnoremap <silent> <F10> :w<cr>:!clear;nim c -r %<cr>
 
 " Fat fingers :P
 command WQ wq
@@ -67,8 +72,14 @@ set smartindent
 
 " Fix yaml indentation
 " http://stackoverflow.com/questions/26962999/wrong-indentation-when-editing-yaml-in-vim
-autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+autocmd FileType yaml setl et ts=2 sts=2 sw=2
 autocmd FileType yaml setl indentkeys-=<:>
+
+" Markdown indentation
+autocmd FileType markdown setl et ts=4 sts=4 sw=4
+
+" Web indentation
+autocmd FileType html,javascript,vue setl et ts=2 sts=2 sw=2
 
 " == Line wrapping ==
 " Enable line wrapping
@@ -79,11 +90,12 @@ set linebreak breakindent
 autocmd FileType markdown set spell spelllang=en_us
 
 " Enable fountain.vim
-au BufRead,BufNewFile *.fountain	set filetype=fountain
+au BufRead,BufNewFile *.fountain set filetype=fountain
 
 " == Syntastic ==
 " Convince Syntastic to use Python 3
 let g:syntastic_python_python_exec = '/usr/bin/python3'
+let g:syntastic_python_flake8_args='--ignore=E501'
 
 " == Airline ==
 " Make the status line boring
