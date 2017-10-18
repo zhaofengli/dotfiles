@@ -27,3 +27,7 @@ define cd(degrees) {
 define ad(x) {
 	return rtod(a(x));
 }
+
+define log(b, c) {
+	return l(c)/l(b);
+}
