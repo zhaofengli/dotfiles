@@ -71,11 +71,7 @@ abbr rccp 'rclone copy'
 
 abbr serve 'php -S localhost:8080'
 
-if command -v nvim > /dev/null
-	abbr v 'nvim'
-else
-	abbr v 'vim'
-end
+abbr v 'vim'
 
 abbr calc 'bc -il ~/.config/bc/init.bc'
 
