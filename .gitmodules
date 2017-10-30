@@ -1,6 +1,6 @@
 [submodule "dotbot"]
 	path = dotbot
-	url = https://github.com/zhaofengli/dotbot
+	url = https://github.com/anishathalye/dotbot
 [submodule "vim/bundle/goyo.vim"]
 	path = vim/bundle/goyo.vim
 	url = https://github.com/junegunn/goyo.vim
