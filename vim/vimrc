@@ -51,6 +51,11 @@ nnoremap <Space> i_<Esc>r
 let g:localvimrc_persistent = 1
 let g:localvimrc_event = ['BufReadPre']
 
+" == Enhanced C++ Highlight ==
+let g:cpp_class_scope_highlight = 1
+let g:cpp_member_variable_highlight = 1
+let g:cpp_experimental_template_highlight = 1
+
 " == Skeletons ==
 function SkeletonCpp()
 	0r ~/.vim/templates/skeleton.cpp
