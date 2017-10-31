@@ -47,17 +47,23 @@ command C let @/ = ""
 " http://vim.wikia.com/wiki/Insert_a_single_character
 nnoremap <Space> i_<Esc>r
 
+" == vim-localvimrc ==
+let g:localvimrc_persistent = 1
+let g:localvimrc_event = ['BufReadPre']
+
 " == Skeletons ==
 function SkeletonCpp()
 	0r ~/.vim/templates/skeleton.cpp
 	6
 	autocmd! templates
+	autocmd User LocalVimRCPost execute 'norm gg=G' | 6
 endfunction
 
 function SkeletonOjCpp()
 	0r ~/.vim/templates/skeleton.oj.cpp
 	17
 	autocmd! templates
+	autocmd User LocalVimRCPost execute 'norm gg=G' | 17
 endfunction
 
 augroup templates
