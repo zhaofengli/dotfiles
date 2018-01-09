@@ -61,3 +61,6 @@
 [submodule "vim/bundle/vim-cpp-enhanced-highlight"]
 	path = vim/bundle/vim-cpp-enhanced-highlight
 	url = https://github.com/octol/vim-cpp-enhanced-highlight
+[submodule "vim/bundle/vim-renpy"]
+	path = vim/bundle/vim-renpy
+	url = https://github.com/chaimleib/vim-renpy
