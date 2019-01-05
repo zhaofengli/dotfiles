@@ -72,6 +72,7 @@ abbr rccp 'rclone copy'
 abbr serve 'php -S localhost:8080'
 
 abbr v 'vim'
+abbr kc 'kubectl'
 
 abbr calc 'bc -il ~/.config/bc/init.bc'
 
