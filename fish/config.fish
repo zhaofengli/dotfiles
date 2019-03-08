@@ -28,13 +28,13 @@ alias git hub
 set -x GOPATH $HOME/Go
 
 prepend_path /usr/lib/ccache
-prepend_path $HOME/.cabal/bin $PATH
+prepend_path $HOME/.cabal/bin
 prepend_path $HOME/.composer/vendor/bin
-prepend_path $HOME/.npm-packages/bin $PATH
+prepend_path $HOME/.npm-packages/bin
 prepend_path $HOME/Android/Sdk/platform-tools
 prepend_path $HOME/.local/google-cloud-sdk/bin
-prepend_path $HOME/.pyenv/bin $PATH
-prepend_path $HOME/.local/bin $PATH
+prepend_path $HOME/.pyenv/bin
+prepend_path $HOME/.local/bin
 
 abbr l 'ls -t'
 abbr la 'ls -a'
@@ -75,6 +75,8 @@ abbr v 'vim'
 abbr kc 'kubectl'
 
 abbr calc 'bc -il ~/.config/bc/init.bc'
+
+abbr lisp rlwrap sbcl
 
 if command -v pyenv > /dev/null
 	status --is-interactive; and source (pyenv init -|psub)
