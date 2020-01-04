@@ -14,7 +14,12 @@ syntax on
 set ts=4 sw=4
 
 " Color schemes
-colorscheme molokai
+colorscheme PaperColor
+if &term =~ '256color' || &term =~ 'kitty'
+	" Disable Background Color Erase (BCE) so that color schemes
+	" work properly when Vim is used inside tmux and GNU screen.
+	set t_ut=
+endif
 
 " Common sets
 set autowrite hlsearch

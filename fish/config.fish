@@ -78,6 +78,9 @@ abbr calc 'bc -il ~/.config/bc/init.bc'
 
 abbr lisp rlwrap sbcl
 
+# Do not log jrnl commands to history
+abbr jrnl ' jrnl'
+
 if command -v pyenv > /dev/null
 	status --is-interactive; and source (pyenv init -|psub)
 end
