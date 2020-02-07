@@ -16,6 +16,7 @@
     ~/.byobu/.tmux.conf:
       create: true
       path: tmux.conf
+    ~/.config/picom.conf: picom.conf
     ~/.config/fish/config.fish:
       create: true
       path: fish/config.fish
@@ -34,6 +35,12 @@
     ~/.config/bc:
       create: true
       path: bc
+    ~/.config/dunst:
+      create: true
+      path: dunst
+    ~/.config/polybar:
+      create: true
+      path: polybar
     ~/.ghci:
       path: ghc/ghci
     ~/.vim: vim
