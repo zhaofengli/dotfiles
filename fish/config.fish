@@ -23,7 +23,9 @@ function source_if_exists --description 'Sources a script if it exists'
 	end
 end
 
-alias git hub
+if command -v hub > /dev/null
+	alias git hub
+end
 
 set -x GOPATH $HOME/Go
 
