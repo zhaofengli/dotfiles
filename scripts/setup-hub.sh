@@ -21,7 +21,9 @@ elif [[ "$OSTYPE" == "freebsd"* ]]; then
 	HUB_PLATFORM="freebsd"
 fi
 
-if [[ $(uname -m) == "arm"* ]]; then
+if [[ $(uname -m) == "aarch64" ]]; then
+	HUB_PLATFORM=$HUB_PLATFORM"-arm64"
+elif [[ $(uname -m) == "arm"* ]]; then
 	HUB_PLATFORM=$HUB_PLATFORM"-arm"
 elif [[ $(uname -m) == "x86_64" ]]; then
 	HUB_PLATFORM=$HUB_PLATFORM"-amd64"
