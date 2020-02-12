@@ -8,7 +8,6 @@
   - [git submodule update --init --recursive, Installing submodules]
   - [mkdir -p ~/.local/bin, Creating ~/.local/bin]
   - [./scripts/setup-hub.sh, Setting up hub]
-  - [./scripts/setup-composer.sh, Setting up Composer]
 
 - link:
     ~/.dotfiles: ''
