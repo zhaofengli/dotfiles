@@ -3,7 +3,7 @@
 # so here's the solution
 
 BIN_DIR=$HOME/.local/bin
-HUB_RELEASE=2.3.0-pre9
+HUB_RELEASE=2.14.1
 HUB_PLATFORM="unknown"
 
 if [[ -f $BIN_DIR/hub && $($BIN_DIR/hub --version | tail -1 | sed 's/hub version //') == $HUB_RELEASE ]]; then
